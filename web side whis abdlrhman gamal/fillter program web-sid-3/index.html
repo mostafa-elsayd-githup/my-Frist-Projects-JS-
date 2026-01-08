@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css file/style.css">
+    <link rel="stylesheet" href="./css file/all.min.css">
+    <link rel="stylesheet" href="./css file/framwork.css">
+    <title>filter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome In My APP<br><span>Eng: Mstafa Elsayd</span></h1>
+        <div class="content">
+            <div class="images">
+                <img   id="image">
+                <div class="input">
+                    <label for="Upload">Upload</label>
+                    <input type="file" id="Upload">
+                </div>
+            </div>
+            <div class="filter">
+                <div>
+                    <label for="1">Saturate</label>
+                    <input type="range" id="1"  value="100">
+                </div>
+                <div>
+                <label for="2">Contrast</label>
+                <input type="range" id="2"  value="100">   
+                </div>
+                <div>
+                <label for="3">Brightness</label>
+                <input type="range" id="3" value="100">    
+                </div>
+
+                <div>
+                <label for="4">Sepia</label>
+                <input type="range" id="4" value="0">
+                </div>
+
+                <div>
+                <label for="5">Grayscale</label>
+                <input type="range" id="5" value="0"> 
+                </div>
+                
+                <div>
+                <label for="6">blur</label>
+                <input type="range" id="6" value="0">
+                </div>
+
+                <div>
+                <label for="5">Hue Rotate</label>
+                <input type="range" id="7" value="0">
+                </div>
+
+                <div class="submit">
+                    <input onclick="resetValue()" class="reset" type="submit" value="Reset">
+                    <!-- <input class="save" type="submit" value="Save"> -->
+                     <button>Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
+<!-- src="./IMG_20250423_042045.jpg" -->

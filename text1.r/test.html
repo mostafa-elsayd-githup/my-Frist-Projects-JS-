@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./framwork.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- <div class="mood"></div> -->
+    <div class="head">
+      <h1> APP Store </h1>
+      <br />
+    <div class="container">
+      <div class="form">
+        <input type="text" class="title" placeholder="title" />
+        <div class="price">
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="Price"
+            class="price-f"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="taxes"
+            class="taxes"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="ads"
+            class="ads"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="discount"
+            class="discount"
+          />
+          <!-- <input  type="text" placeholder="total :" class="total"> -->
+          <small id="total"> </small>
+        </div>
+        <input type="text" placeholder="count (1, 2, 3...)" class="count" />
+        <input type="text" placeholder="category" class="category" />
+        <button class="create">Create</button>
+        <input
+          onkeyup="searchData(this.value)"
+          type="search"
+          placeholder="search"
+          class="search-felad"
+        />
+        <div class="search">
+          <button onclick="searchFilter(this.id)" id="search-title">
+            Search By Title
+          </button>
+          <button onclick="searchFilter(this.id)" id="search-category">
+            Search By Category
+          </button>
+        </div>
+        <button onclick="deleteAll_data()" class="delete-all d-none">
+          Delete All
+        </button>
+        <div class="footer">
+          <table>
+            <thead>
+              <tr>
+                <td>ID</td>
+                <td>TITLE</td>
+                <td>PRICE</td>
+                <td>Taxes</td>
+                <td>ADS</td>
+                <td>DISCOUNT</td>
+                <td>TOTAL</td>
+                <td>Count</td>
+                <td>CATERING</td>
+                <td>UPDATE</td>
+                <td>DELETE</td>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

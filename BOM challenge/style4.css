@@ -1,0 +1,73 @@
+
+.container{
+    width: fit-content;
+    margin: auto;
+}
+.container .form{
+    display: flex;
+    width: 600px;
+    background-color: #ddd;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.task{
+    width: 620px;
+    background-color: #ddd;
+    margin-top: 30px;
+    padding: 13px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.container .form .input{
+    width: 450px;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.container .form .input:focus{
+    width: 600px;
+}
+.container .form .add{
+    width: 130px;
+    height: 40px;
+    background-color: #f94449;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+}
+.container .form .add:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,79 @@
+{
+    box-sizing: border-box;
+}body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}.container{
+    background-color: #fff;
+    width: 400px;
+    height: 580px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    align-content: center;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+box-shadow: 0px 0px 3px 3px #0000004a;
+    .image{
+        background-color: #007bff;
+        width: 360px;
+        height: 450px;
+        margin: 15px auto;
+        position: relative;
+        border-radius: 10px;
+        span{
+            font-size: 70px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+        }
+    }
+    .card{
+        height: 100vh;
+    }
+} 
+body::before{
+    content: '';
+    position: fixed;
+    width: 243%;
+    height: 112%;
+    background-color:#007bff;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform:translateX(-50%) skew(0, -10deg);
+    -webkit-transform:translateX(-50%) skew(0, -10deg);
+    -moz-transform:translateX(-50%) skew(0, -10deg);
+    -ms-transform:translateX(-50%) skew(0, -10deg);
+    -o-transform:translateX(-50%) skew(0, -10deg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: waving 5s ease-in-out infinite alternate;
+    -webkit-animation: waving 5s ease-in-out infinite alternate;
+}
+@keyframes waving{
+  from{
+    transform:translateX(-50%) skew(0, -10deg);
+    -webkit-transform:translateX(-50%) skew(0, -10deg);
+    -moz-transform:translateX(-50%) skew(0, -10deg);
+    -ms-transform:translateX(-50%) skew(0, -10deg);
+    -o-transform:translateX(-50%) skew(0, -10deg);
+}to{
+    transform:translateX(-30%) skew(-10deg, 0)  ;
+    -webkit-transform:translateX(-30%) skew(-10deg, 0)  ;
+    -moz-transform:translateX(-30%) skew(-10deg, 0)  ;
+    -ms-transform:translateX(-30%) skew(-10deg, 0)  ;
+    -o-transform:translateX(-30%) skew(-10deg, 0)  ;
+}
+}
+

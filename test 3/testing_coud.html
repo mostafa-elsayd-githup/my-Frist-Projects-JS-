@@ -1,0 +1,67 @@
+<!-- <input type="number" placeholder="USA" id="dollar">
+    <input type="number" placeholder="EGP" id="egypt">
+    <input type="submit" value="clear" id="clear"> -->
+
+<!-- <button id="After">After</button>
+    <button id="Before">Before</button>
+    <button id="inside">inside</button>
+    <div id="content" class="content">content</div>
+    <div id="container" class="container"> -->
+
+<!-- <div id="hello" class="hello">Hello</div>     -->
+
+
+<!-- <div class="container">
+        <div class="list">
+    
+            <ul id="ul">
+                <li>Home</li>
+                <li>Courses</li>
+                <li>News</li>
+                <li>Problem</li>
+                <li>QUize</li>
+            </ul>
+        </div>
+        <div class="bottom">
+    
+            <button id="open" type="submit" placeholder="open">close</button>
+           
+        </div>
+    </div> -->
+
+<!-- 
+    <div class="container">
+        <div class="head">
+            <h1 class="">CRUD</h1>
+            <p class="">Lorem ipsum dolor sit amet. </p>
+        </div>
+        <form action="">
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" placeholder="Password" id="password">
+            <input type="submit" value="submit" id="submit">
+        </form>
+    </div> -->
+<!-- <div class="" id="but">^</div> -->
+<!-- <input type="text" class="" id="but">  -->
+
+<!-- <div onclick="setColor(this.id) "id="red"></div>
+    <div  onclick="setColor(this.id) "id="green"></div>
+    <div  onclick="setColor(this.id) "id="blue"></div>
+    <div onclick="setColor(this.id) "id="black"></div> -->
+
+    create.addEventListener("click", () => {
+    
+    let updataInfo = JSON.parse(localStorage.getItem("info"));
+    updataInfo.forEach((x) => {
+    x.title = first.value
+    x.price = price.value
+    x.taxes = taxes.value
+    x.ads = ads.value
+    x.discount = discount.value
+    x.total = total.innerHTML
+    x.count = count.value
+    x.category = category.value
+    })
+    localStorage.setItem("info", JSON.stringify(updataInfo));
+    })

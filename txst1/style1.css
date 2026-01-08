@@ -1,0 +1,12 @@
+.container{
+
+}
+.container .image {
+    width: 100px;
+    height: 100px;
+}
+.container .image img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}

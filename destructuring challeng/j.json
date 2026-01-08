@@ -1,0 +1,11 @@
+{
+    "string": "mostafa",
+    "number": 100,
+    "object": {
+        "EG": "giza",
+        "US": "new york"   
+},
+    "array":["HTML", "CSS", "JS"],
+    "boolean": true,
+    "null": null
+}
